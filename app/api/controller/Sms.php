@@ -31,8 +31,9 @@ class Sms extends BaseController
             $type = 'ali';
         }
         // 业务层处理短信
-        if (SmsBus::sendCode($phoneNumber, 6, $type)) {
-            return show(config('status.success'), '发送成功');
+        $result = SmsBus::sendCode($phoneNumber, 6, $type);
+        if ($result['result']) {
+            return show(config('status.success'), '发送成功'.$result['code']);
         }
         return show(config('status.success'), 'ok');
     }

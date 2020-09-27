@@ -5,7 +5,7 @@
  * Date: 2020/9/24
  * Time: 16:41
  */
-declare(strict_types=1);
+// declare(strict_types=1);
 
 namespace app\common\business;
 
@@ -15,7 +15,17 @@ use app\common\lib\ClassArr;
 
 class Sms
 {
-    public static function sendCode(string $phone, int $len = 6, string $type = 'ali'): bool
+    /**
+     * Notess:发送验证码
+     * User: Lint
+     * Date: 2020/9/27 17:42
+     * @param string $phone
+     * @param int $len
+     * @param string $type
+     * @return bool
+     * @throws \ReflectionException
+     */
+    public static function sendCode(string $phone, int $len = 6, string $type = 'ali'): array
     {
         $code = Num::getCode($len);
         // $sms = AliSms::sendCode($phone, $code)
@@ -31,6 +41,7 @@ class Sms
             // 入库到redis 设置三分钟失效
             cache(config('redis.code_pre') . $phone, $code, config('redis.code_expire'));
         }
-        return $sms;
+
+        return ['result' => $sms, 'code' => $code];
     }
 }

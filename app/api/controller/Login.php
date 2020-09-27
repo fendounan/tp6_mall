@@ -11,6 +11,7 @@ namespace app\api\controller;
 use app\BaseController;
 use app\common\business\Sms as SmsBus;
 use app\api\validate\User as UserValidate;
+use app\common\business\User;
 
 class Login extends BaseController
 {
@@ -29,7 +30,16 @@ class Login extends BaseController
         if (!$validate->scene('login')->check($data)) {
             return show(config('status.error'), $validate->getError());
         }
-        $result = (new \app\common\business\User())->login($data);
+        $useBus = new User();
+        try {
+            $result = $useBus->login($data);
+        } catch (\Exception $e) {
+            return show(config('status.error'), $e->getMessage());
+        }
+
+        if ($result) {
+            return show(config('status.success'), '登录成功', $result);
+        }
         return show(config('status.error'), '登录失败');
     }
 }
