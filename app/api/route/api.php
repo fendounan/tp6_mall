@@ -8,7 +8,10 @@
 
 use think\facade\Route;
 
-Route::get('test','Test/test');
-Route::post('smscode','sms/code');
-Route::post('login','login/index');
-Route::post('user','user/index');
+Route::get('test', 'Test/test');
+Route::post('smscode', 'sms/code');
+Route::post('login', 'login/index');
+Route::rule('logout', 'logout/index','get|post');
+// Route::post('user','user/index');
+// 资源路由
+Route::resource('user', 'User');

@@ -72,11 +72,31 @@ class User
         $redisData = [
             'id' => $userId,
             'username' => $username,
+            // 'aa' => 123,
         ];
         $res = cache(config('redis.token_pre') . $token, $redisData, Time::userLoginExpiresTime($data['type']));
         // 返回前端所需要的token
         // new \redis;
         return $res ? ['token' => $token, 'username' => $username] : false;
 
+    }
+
+    /**
+     * Notess:返回用户数据
+     * User: Lint
+     * Date: 2020/9/27 21:07
+     * @param $id
+     * @return array
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
+    public function getNormalUserById($id)
+    {
+        $user = $this->userObj->getUserById($id);
+        if (!$user || $user->status != config('status.mysql.table_normal')) {
+            return [];
+        }
+        return $user->toArray();
     }
 }

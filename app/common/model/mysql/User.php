@@ -14,7 +14,6 @@ class User extends Model
 {
 
 
-
     public function getUserByPhone($phone)
     {
         if (empty($phone)) {
@@ -46,5 +45,24 @@ class User extends Model
         ];
 
         return $this->where($where)->update($data);
+    }
+
+    /**
+     * Notess:通过id获取用户数据
+     * User: Lint
+     * Date: 2020/9/27 21:05
+     * @param $id
+     * @return array|bool|Model|null
+     * @throws \think\db\exception\DataNotFoundException
+     * @throws \think\db\exception\DbException
+     * @throws \think\db\exception\ModelNotFoundException
+     */
+    public function getUserById($id)
+    {
+        $id = intval($id);
+        if (!$id) {
+            return false;
+        }
+        return $this->find($id);
     }
 }
