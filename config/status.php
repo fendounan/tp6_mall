@@ -8,6 +8,7 @@
 return [
     'success' => 1,
     'error' => 0,
+    'not_login' => -1,
     // user用户状态
     'mysql' => [
         'table_normal' => 1,

@@ -8,6 +8,7 @@
 
 use think\facade\Route;
 
-Route::get('test','index/test');
+Route::get('test','Test/test');
 Route::post('smscode','sms/code');
 Route::post('login','login/index');
+Route::post('user','user/index');

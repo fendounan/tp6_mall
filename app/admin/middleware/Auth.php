@@ -30,7 +30,7 @@ class Auth
         return $response;
     }
 
-    public function end()
+    public function end(\think\Response $response)
     {
         // dump(3);
     }

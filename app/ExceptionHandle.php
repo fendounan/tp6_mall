@@ -50,7 +50,7 @@ class ExceptionHandle extends Handle
      */
     public function render($request, Throwable $e): Response
     {
-        // 添加自定义异常处理机制
+        // 添加自定义api格式的异常处理机制 此处为全局异常处理模块，不适合在此处调用show方法
         // return show(2,$e->getMessage());
         // 其他错误交给系统处理
         return parent::render($request, $e);
