@@ -18,11 +18,11 @@ use app\common\lib\Time;
 
 class User
 {
-    public $userObj = null;
+    public $model = null;
 
     public function __construct()
     {
-        $this->userObj = new UserModel();
+        $this->model = new UserModel();
     }
 
     public function login($data)

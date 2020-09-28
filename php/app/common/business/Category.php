@@ -18,7 +18,7 @@ use app\common\lib\Time;
 
 class Category
 {
-    public $userObj = null;
+    public $model = null;
 
     public function __construct()
     {

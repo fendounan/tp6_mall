@@ -2,104 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="14a7982a-0647-468c-8184-9ca87ea6f819" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/LICENSE.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/AppService.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/BaseController.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/ExceptionHandle.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Request.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/business/AdminUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/config/admin.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/controller/AdminBase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/controller/Index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/controller/Login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/controller/Logout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/middleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/middleware/Auth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/validate/AdminUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/view/index/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/view/index/welcome.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/admin/view/login/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/config/aliyun.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/config/redis.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/Api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/ApiBase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/AuthBase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/Category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/Login.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/Logout.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/Sms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/Test.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/controller/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/exception/Http.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/provider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/route/api.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/api/validate/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/business/Category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/business/Member.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/business/Sms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/business/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/lib/Arr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/lib/ClassArr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/lib/Num.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/lib/Str.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/lib/Time.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/lib/sms/AliSms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/lib/sms/BaiduSms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/lib/sms/SmsBase.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/model/mysql/AdminUser.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/model/mysql/Category.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/model/mysql/Demo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/model/mysql/Member.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/common/model/mysql/User.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/demo/controller/Error.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/demo/controller/Index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/demo/exception/Http.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/demo/middleware/Check.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/demo/provider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/demo/route/demo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/event.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/middleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/provider.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/service.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/captcha.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/console.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cookie.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/filesystem.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/lang.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/log.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/middleware.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/param.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/route.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/status.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/trace.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/view.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/extend/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/nginx.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/favicon.ico" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/nginx.htaccess" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/robots.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/router.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/static/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/route/app.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/think" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/vendor/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/view/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/app/common/business/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/app/common/business/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/php/app/common/business/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/php/app/common/business/User.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,11 +16,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/php/route/app.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="115">
               <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/app/common/business/Member.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="115">
+              <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/php/app/common/business/BusBase.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/app/common/model/mysql/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-805">
+              <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/php/app/common/business/User.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -155,9 +95,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/app/admin/middleware/Check.php" />
-        <option value="$PROJECT_DIR$/app/admin/middleware.php" />
-        <option value="$PROJECT_DIR$/app/admin/controller/AdminBase.php" />
         <option value="$PROJECT_DIR$/public/static/admin/js/login.js" />
         <option value="$PROJECT_DIR$/app/admin/validate/AdminUser.php" />
         <option value="$PROJECT_DIR$/.env" />
@@ -206,6 +143,9 @@
         <option value="$PROJECT_DIR$/app/common/lib/Arr.php" />
         <option value="$PROJECT_DIR$/app/api/controller/Category.php" />
         <option value="$PROJECT_DIR$/php/route/app.php" />
+        <option value="$PROJECT_DIR$/php/app/common/business/Category.php" />
+        <option value="$PROJECT_DIR$/php/app/common/business/User.php" />
+        <option value="$PROJECT_DIR$/php/app/common/business/BusBase.php" />
       </list>
     </option>
   </component>
@@ -272,6 +212,51 @@
               <item name="tp6_mall" type="b2602c69:ProjectViewProjectNode" />
               <item name="tp6_mall" type="462c0819:PsiDirectoryNode" />
               <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp6_mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp6_mall" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp6_mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp6_mall" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp6_mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp6_mall" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="business" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp6_mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp6_mall" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp6_mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp6_mall" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="common" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+              <item name="mysql" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tp6_mall" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tp6_mall" type="462c0819:PsiDirectoryNode" />
+              <item name="php" type="462c0819:PsiDirectoryNode" />
               <item name="route" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -281,19 +266,20 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/common/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/php/app/common/business" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="fileTemplates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\phpstudy_pro\WWW\tp6_mall\php\app\common\business" />
       <recent name="D:\phpstudy_pro\WWW\tp6_mall\app\common\lib" />
       <recent name="D:\phpstudy_pro\WWW\tp6_mall\app\common\model\mysql" />
       <recent name="D:\phpstudy_pro\WWW\tp6_mall\app\common\business" />
       <recent name="D:\phpstudy_pro\WWW\tp6_mall\app\api\controller" />
-      <recent name="D:\phpstudy_pro\WWW\thinkphp6\app\common\model\mysql" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\phpstudy_pro\WWW\thinkphp6\app\admin" />
@@ -335,12 +321,12 @@
       <workItem from="1600995304600" duration="14325000" />
       <workItem from="1601083965659" duration="6081000" />
       <workItem from="1601178577172" duration="16849000" />
-      <workItem from="1601279508919" duration="5958000" />
+      <workItem from="1601279508919" duration="6920000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101147000" />
+    <option name="totallyTimeSpent" value="102109000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1616" height="834" extended-state="6" />
@@ -366,77 +352,11 @@
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Database" order="3" />
     </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.23625" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32872504" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" />
-      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
-    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/common/lib/sms/BaiduSms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="17" selection-start-line="13" selection-start-column="11" selection-end-line="13" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/api/log/202009/26.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.idea/php.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/api/validate/User.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="20" column="6" selection-start-line="20" selection-start-column="6" selection-end-line="20" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="30" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor />
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/runtime/api/log/202009/27.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="4" selection-start-column="4" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/topthink/framework/src/think/response/Json.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="293">
@@ -763,10 +683,66 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/common/business/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/common/business/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="10" column="32" lean-forward="true" selection-start-line="10" selection-start-column="32" selection-end-line="10" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/common/business/Category.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="18" column="6" selection-start-line="18" selection-start-column="6" selection-end-line="18" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/php/route/app.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
           <caret line="13" column="83" selection-start-line="13" selection-start-column="83" selection-end-line="13" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/common/business/Sms.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-230">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/common/model/mysql/AdminUser.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-552">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/common/model/mysql/Member.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/common/model/mysql/User.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-805">
+          <caret line="12" column="6" selection-start-line="12" selection-start-column="6" selection-end-line="12" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/php/app/common/business/BusBase.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="20" selection-start-line="14" selection-start-column="20" selection-end-line="14" selection-end-column="20" />
         </state>
       </provider>
     </entry>
