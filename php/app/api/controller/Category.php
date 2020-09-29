@@ -11,6 +11,7 @@ namespace app\api\controller;
 use app\BaseController;
 use app\common\business\Category as CategoryBus;
 use app\common\lib\Arr;
+use app\common\lib\Show;
 
 class Category extends ApiBase
 {
@@ -20,14 +21,13 @@ class Category extends ApiBase
             $categoryBus = new CategoryBus();
             $categorys = $categoryBus->getNormalCategorys();
         } catch (\Exception $e) {
-            return show(config('status.error'), $e->getMessage());
+            return Show::error([], $e->getMessage());
         }
         if (empty($categorys)) {
-            return show(config('status.error'), 'ok', []);
+            return Show::success([]);
         }
         $result = Arr::getCategoryTree($categorys);
         $result = Arr::sliceTreeArr($result, 5, 3, 2);
-        return show(config('status.success'), 'ok', $result);
-        // print_r($result);/
+        return Show::success($result);
     }
 }
