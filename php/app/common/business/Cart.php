@@ -10,6 +10,7 @@ namespace app\common\business;
 
 use think\facade\Cache;
 use app\common\lib\Key;
+use app\common\lib\Arr;
 
 class Cart extends BusBase
 {
@@ -25,10 +26,44 @@ class Cart extends BusBase
             'create_time' => date('Y-m-d H:i:s'),
         ];
         try {
+            $get = Cache::hGet(Key::userCart($userId), Key::skuCart($skuId));
+            if ($get) {
+                $get = json_decode($get, true);
+                $redisData['num'] = $get['num'] + $redisData['num'];
+            }
             $res = Cache::hSet(Key::userCart($userId), Key::skuCart($skuId), json_encode($redisData, JSON_UNESCAPED_UNICODE));
         } catch (\Exception $e) {
             return false;
         }
         return $res;
+    }
+
+    /**
+     * Notess:获取购物车列表
+     * User: Lint
+     * Date: 2020/9/30 13:02
+     * @param $userId
+     * @return array
+     */
+    public static function getLists($userId)
+    {
+        try {
+            $get = Cache::hGetAll(Key::userCart($userId));
+
+            $get = array_map(function ($val) {
+                return json_decode($val, true);
+            }, $get);
+            $get = Arr::arraySort($get, 'create_time');
+
+            $result = [];
+            foreach ($get as $key => $item) {
+                $result[explode(config('redis.cart_sku_pre'), $key)[1]] = $item;
+            }
+
+        } catch (\Exception $e) {
+            return [];
+        }
+
+        return $result;
     }
 }

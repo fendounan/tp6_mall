@@ -14,6 +14,7 @@ Route::post('login', 'login/index');
 Route::rule('logout', 'logout/index', 'get|post');
 Route::rule('category', 'category/index', 'get|post');
 Route::rule('cart/add', 'cart/add', 'get|post');
+Route::rule('cart/lists', 'cart/lists', 'get|post');
 // Route::post('user','user/index');
 // 资源路由
 Route::resource('user', 'User');
