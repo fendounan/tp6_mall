@@ -56,7 +56,7 @@ class ClassArr
         // 如果非静态的
         // 是否存在该类
         if (!array_key_exists($key, $classArr)) {
-            return false;
+            throw new \Exception("{$key}类库不存在");
         }
         $className = $classArr[$key];
 

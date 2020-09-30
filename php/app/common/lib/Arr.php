@@ -62,7 +62,7 @@ class Arr
     }
 
     /**
-     * Notess:二维数组根据某个字段排序
+     * Notess:二维数组根据某个字段排序 注意 索引数组的键值不会被保留
      * User: Lint
      * Date: 2020/9/30 12:51
      * @param $array 要排序的数组

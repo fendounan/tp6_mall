@@ -64,6 +64,8 @@ class Cart extends BusBase
             return [];
         }
 
+        // 通过skuid获取价格
+
         return $result;
     }
 }
