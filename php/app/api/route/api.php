@@ -9,6 +9,7 @@
 use think\facade\Route;
 
 Route::get('test', 'Test/test');
+Route::get('demo', 'Demo/mutexkey');
 Route::post('smscode', 'sms/code');
 Route::post('login', 'login/index');
 Route::rule('logout', 'logout/index', 'get|post');
