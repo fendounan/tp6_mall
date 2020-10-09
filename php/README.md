@@ -2,6 +2,16 @@ ThinkPHP 6.0
 ================
 
 im demo
+dasdfasdf
+as
+dfa
+sdf
+asdf
+a
+sdf
+asd
+f
+
 
 > 运行环境要求PHP7.1+。
 
