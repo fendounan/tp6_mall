@@ -1,6 +1,11 @@
 ThinkPHP 6.0
 ================
-
+asdfasfa
+asdfasdf
+asd
+fas
+dfa
+sdfa
 > 运行环境要求PHP7.1+。
 
 [官方应用服务市场](https://www.thinkphp.cn/service) | [`ThinkPHP`开发者扶持计划](https://sites.thinkphp.cn/1782366)
