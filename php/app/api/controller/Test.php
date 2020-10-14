@@ -18,6 +18,8 @@ class Test extends BaseController
 {
     public function test()
     {
+        echo hash('sha256',1);
+
         // 异常处理 场景1
         // throw new \think\exception\HttpException(401, '找不到相应的数据');
 
