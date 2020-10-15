@@ -12,6 +12,7 @@ use app\BaseController;
 use app\common\lib\Key;
 use think\facade\Cache;
 use think\facade;
+use app\common\lib\Snowflake;
 
 
 class Demo extends BaseController
@@ -79,5 +80,49 @@ class Demo extends BaseController
             }
         }
         return $myName;
+    }
+
+    /**
+     * Notes:秒杀
+     * User: Lint
+     * Date: 2020/10/15 22:52
+     * @throws \Exception
+     */
+    public function secKill()
+    {
+        $workId = rand(1, 1023);
+        $userId = Snowflake::getInstance()->setWorkId($workId)->nextId();
+
+        $listKey = "goods_list";
+        $orderKey = "buy_order";
+        $failUserNum = "fail_user_num";
+        $allUserNum = "all_user_num";
+        // 统计总人数
+        Cache::store('redis')->incr($allUserNum);
+        if ($goodsId = Cache::store('redis')->lPop($listKey)) {
+            // 秒杀成功
+            // 将幸运用户存在集合中
+            Cache::store('redis')->hSet($orderKey, $goodsId, $userId);
+        } else {
+            //秒杀失败
+            //将失败用户计数
+            Cache::store('redis')->incr($failUserNum);
+        }
+        echo "SUCCESS";
+    }
+
+    /**
+     * Notes:添加秒杀商品
+     * User: Lint
+     * Date: 2020/10/15 22:53
+     */
+    public function addGoods()
+    {
+        $count = 10;
+        $listKey = "goods_list";
+        for ($i = 1; $i <= $count; $i++) {
+            //将商品id push到列表中
+            Cache::store('redis')->rPush($listKey, $i);
+        }
     }
 }
